@@ -1,0 +1,169 @@
+@import url(https://fonts.google.com/specimen/DM+Sans);
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: hsl(33, 100%, 98%);
+  font-family: 'DM Sans';
+}
+.App {
+  width: 25em;
+  height: 25em;
+}
+hr { 
+  background-color: lightgray; 
+  width: 100%;
+  margin-top: .8em;
+}
+.balance--container{
+  display: flex;
+  justify-content: space-between;
+  background-color: hsl(10, 79%, 65%);
+  height: 3.8em;
+  border-radius: 1em;
+  padding: .7em 1.5em;
+  color: #fff;
+}
+.main--container{
+  padding: 1.5em;
+  border-radius: 1em;
+  height: 20em;
+  margin-top: 1em;
+  box-shadow: .2em .2em .5em rgb(238, 235, 235);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.cost--container{
+  display: flex;
+  justify-content: space-between;
+  height: 3.8em;
+  border-radius: 1em;
+}
+.cost--container #price--container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.cost--container .value--container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+.value--container div:first-child{
+  font-size: 1em;
+  font-weight: 700;
+}
+.value--container div:last-child{
+  font-size: .7em;
+  color: gray;
+}
+#price--container .cost{
+  font-size: 2em;
+  font-weight: 800;
+}
+#price--container .title{
+  font-size: .8em;
+  color: gray;
+}
+.balance--container .price--container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.balance--container .circles--container{
+  position:relative;
+  display: flex;
+  width: 2.5em;
+  align-items: center;
+}
+.balance--container .black--circle{
+  height: 1.8em;
+  width: 1.8em;
+  border-radius: 1em;
+  background-color: #000;
+  position: absolute;
+  left: .8em;
+}
+.balance--container .white--circle{
+  height: 1.5em;
+  width: 1.5em;
+  border-radius: 1em;
+  border: 1px solid #fff;
+  z-index: 1;
+}
+.price--container .title{
+  font-size: .8em;
+  font-weight: 500;
+}
+.price--container .price{
+  font-size: 1.5em;
+  font-weight: 800;
+}
+.main--container{
+  background-color: #fff;
+}
+.heading--container p {
+  font-weight: 800;
+  color: #000;
+  font-size: 1.5em;
+  margin: 0;
+}
+.chart--container{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 2.5em;
+}
+.bar{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bar div:first-child{
+  width: 2em;
+  min-height: 2em;
+  border-radius: .2em;
+  background-color: hsl(10, 79%, 65%);
+}
+.bar div:last-child{
+  color: gray;
+  font-size: .9em;
+  margin-top: .3em;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
